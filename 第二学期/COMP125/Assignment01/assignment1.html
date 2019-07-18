@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+ 
+
+<head>
+
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>BMR Imperial System - Gaofeng Pan - COMP125 - Assignment 1</title>
+
+</head>
+
+<body>
+
+  <form>
+
+                                 <fieldset>
+
+                      <table id="bmrTable" style="width: 100%">
+
+                                            <tr>
+
+                                                       <td class="alignRight">
+
+                      <label for="optGender">Gender </label>
+
+                                            </td>
+
+                                                       <td>
+
+                      <input id="male" name="optGender" type="radio" value="1" required="required" tabindex="1"/>Male
+
+                                                       </td>
+
+                                                       <td>
+
+                                 <input id="female" name="optGender" type="radio" value="2" required="required" style="width: 20px" tabindex="3"/>Female</td>
+
+                                                       <td>&nbsp;</td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                       <td class="alignRight" style="height: 33px">
+
+                                 <label for="age">
+
+                                 Age   
+
+                                 </label></td>
+
+                                                       <td style="height: 33px"><label for="age">
+
+                                 <input id="age" name="txtAge" size="5" tabindex="5" type="number" required="required"></label></td>
+
+                                                       <td style="height: 33px"></td>
+
+                                                       <td style="height: 33px"></td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                       <td>Your Height</td>
+
+                                                       <td>&nbsp;</td>
+
+                                                       <td>&nbsp;</td>
+
+                                                       <td>&nbsp;</td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                       <td class="alignRight">
+
+                                 <label for="feet">Feet
+
+                                 </label>
+
+                                                       </td>
+
+                                                       <td><label for="feet">
+
+                                 <input id="feet" name="txtFeet" size="5" tabindex="7" type="number" required="required"></label></td>
+
+                                                       <td colspan="2">
+
+                                 <label for="inches">Inches 
+
+                                 <input id="inches" name="txtInches" size="5" tabindex="9" type="number" required="required"></label></td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                       <td>Your Weight</td>
+
+                                                       <td>&nbsp;</td>
+
+                                                       <td>&nbsp;</td>
+
+                                                       <td>&nbsp;</td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                       <td class="alignRight">
+
+                                 <label for="pounds">Pounds
+
+                                 </label></td>
+
+                                                       <td><label for="pounds">
+
+                                 <input id="pounds" name="txtPounds" size="5" tabindex="11" type="number" required="required"></label></td>
+
+                                                       <td>&nbsp;</td>
+
+                                                       <td>&nbsp;</td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                       <td colspan="2">Select your activity level:</td>
+
+                                                       <td>&nbsp;</td>
+
+                                                       <td>&nbsp;</td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                       <td class="alignRight">
+
+                                 <input id="sedentary" name="optActivity" type="radio" value="1" style="height: 20px" required="required" tabindex="13"/></td>
+
+                                                       <td> <label for="sedentary"> Sedentary</label></td>
+
+                                                       <td>&nbsp;</td>
+
+                                                       <td>&nbsp;</td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                       <td class="alignRight">
+
+                                 <input id="moderate" name="optActivity" type="radio" value="2" required="required" tabindex="15"/></td>
+
+                                                       <td> <label for="moderate"> Moderately</label></td>
+
+                                                       <td>&nbsp;</td>
+
+                                                       <td>&nbsp;</td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                       <td class="alignRight">
+
+                                 <input id="vigorously" name="optActivity" type="radio" value="3" required="required" tabindex="17" /></td>
+
+                                                       <td> <label for="vigorously"> Vigorously</label></td>
+
+                                                       <td>&nbsp;</td>
+
+                                                       <td>&nbsp;</td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                       <td>&nbsp;</td>
+
+                                                       <td>&nbsp;</td>
+
+                                                       <td>&nbsp;</td>
+
+                                                       <td>&nbsp;</td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                       <td>&nbsp;</td>
+
+                                                       <td colspan="2">
+
+                      <input id="submitImperic" name="btnSubmit" type="button" value="Calculate BMR" tabindex="19"/></td>
+
+                                                       <td>&nbsp;</td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                       <td>&nbsp;</td>
+
+                                                       <td>&nbsp;</td>
+
+                                                       <td>&nbsp;</td>
+
+                                                       <td>&nbsp;</td>
+
+                                            </tr>
+
+                                 </table>
+
+                                 </fieldset>
+
+                                 <fieldset>
+
+ 
+
+                          <p><label>BMR: </label><span id="resultBMR" class="result"></span></p>
+
+                          <p><label>Calorie Intake: </label><span id="resultCal" class="result"></span></p>
+
+   
+
+                                 </fieldset>
+
+</form>
+
+<script src="assignment1.js"></script>
+
+</body>
+
+</html>

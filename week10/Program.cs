@@ -4,10 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace week10
+namespace COMP123_S2019
 {
-    static class Program
+    public static class Program
     {
+
+        public static Dictionary<FormName, Form> Forms;
+    
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +19,15 @@ namespace week10
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            //create an instance of the forms Dictionary
+            Forms = new Dictionary<FormName,Form>();
+            Forms.Add(FormName.START_FORM, new StartForm());
+            Forms.Add(FormName.MAIN_FORM, new MainForm());
+
+
+
+            Application.Run(Forms[FormName.START_FORM]);
         }
     }
 }

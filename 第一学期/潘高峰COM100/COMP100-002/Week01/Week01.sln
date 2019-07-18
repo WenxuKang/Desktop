@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q1_CalculateAverage", "Q1_CalculateAverage\Q1_CalculateAverage.csproj", "{42CAF471-84EC-462F-B065-D809E5604DE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q2_Circumference", "Q2_Circumference\Q2_Circumference.csproj", "{43C345EB-AF7E-4E78-9D2C-EB4517C5BCE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42CAF471-84EC-462F-B065-D809E5604DE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42CAF471-84EC-462F-B065-D809E5604DE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42CAF471-84EC-462F-B065-D809E5604DE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42CAF471-84EC-462F-B065-D809E5604DE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43C345EB-AF7E-4E78-9D2C-EB4517C5BCE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43C345EB-AF7E-4E78-9D2C-EB4517C5BCE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43C345EB-AF7E-4E78-9D2C-EB4517C5BCE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43C345EB-AF7E-4E78-9D2C-EB4517C5BCE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

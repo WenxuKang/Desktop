@@ -1,0 +1,74 @@
+﻿body {
+	background-image: url('B&W.jpg');
+	background-repeat: no-repeat;
+	background-size: cover cover;
+	background-color: #FFFFFF;
+}
+#allPage {
+	font-family: "Segoe UI Historic";
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#op {
+	background-color: #FFFFFF;
+	opacity:0.5;
+	width:650px;
+	height:550px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:50px;
+	padding-top:10px;
+	}
+#BMRResult1 {
+	font-family: "rosewood Std Regular";
+	color: #CC0000;
+	font-size: 1.75em;
+}
+#BMRResult2 {
+	font-family: "rosewood Std Regular";
+	font-size: 1.753em;
+	color: #CC6600;
+}
+#BMRResult3 {
+	color: #33CC33;
+	font-family: "rosewood Std Regular";
+	font-size: 1.75em;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Tekton Pro Ext";
+}
+
+form {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+legend {
+    font-family: "Lithos Pro Regular";
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+h1 {
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "rosewood Std Regular";
+}
+
+fieldset {
+    margin-top: 15px;
+
+}
+p {
+	text-align: center;
+	vertical-align: middle;
+	font-family: "rosewood Std Regular";
+	font-size: 1.5em;
+}

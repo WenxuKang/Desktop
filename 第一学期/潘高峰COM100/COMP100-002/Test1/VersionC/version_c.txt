@@ -1,0 +1,100 @@
+/*
+ * =========================      Test #2 Winter 2018        =========================
+ * 
+ * Name:
+ * Student ID:
+ *
+ * Question 1c.
+ * 8 Marks.
+ *
+ * Write a program that prints multiples of 4 in decending order on a single line.
+ * The program prompts the user for the start value. 
+ * 
+ * Type of loop-> for
+ * [Solution: Question1C]
+ -------------------------------------------------------------------------------- */
+
+
+/*
+ * =========================      Test #2 Winter 2018        =========================
+ * 
+ * Name:
+ * Student ID:
+ *
+ * Question 2c.
+ * 10 Marks.
+ *
+ * Write a program that subtract the user input from a target. When the target gets 
+ * to zero or just becomes negative. The program prints the final target and the 
+ * number of user inputs required
+ * 
+ * Type of loop-> do-while
+ * [Solution: Question2C]
+ -------------------------------------------------------------------------------- */
+
+
+/*
+ * =========================      Test #2 Winter 2018      =========================
+ * 
+ * Name:
+ * Student ID:
+ *
+ * Question 3c.
+ * 10 Marks.
+ *
+ * Write a program that displays a conversion table of liters to gallon. The program
+ * prompts the user for the start liter and the end liter value. The table must be in
+ * 2l increments. You must match the format exactly.
+ * 
+ * Type of loop-> while
+ * 1 liter = 0.26 gallon
+ * [Solution: Question3C]
+ -------------------------------------------------------------------------------- */
+
+
+/*
+ * =========================      Test #2 Winter 2018        =========================
+ * 
+ * Name:
+ * Student ID:
+ *
+ * Question 4c.
+ * 12 Marks.
+ *
+ * Write a program that displays the table show in the sample executable.
+ * 
+ * the relationship is given by the quadratic equation
+ *             y = 6x^2 - 5x + 1
+ *             
+ * Type of loop-> your favorite (your MUST use a loop)
+ * Hints:
+ *  1) Generate the first column using a place holder (increment = 0.015)
+ *  2) Generate successive columns one at a time by adding another placeholder
+ *  3) Format using column specifier (do not use tabs)
+ *     
+ * [Solution: Question4C]
+ -------------------------------------------------------------------------------- */
+
+
+/*
+ * =========================      Test #2 Winter 2018        =========================
+ * 
+ * Name:
+ * Student ID:
+ *
+ * Question 5c.
+ * 14 Marks.
+ *
+ * Write a program that displays the pattern show in the sample executable.
+ * 
+ * Type of loop-> your favorite (your must use a pair of nested loops)
+ * Hints:
+ *  1) Use counters that increments
+ *  2) For columns use values between 61 and 76
+ *  3) For rows use values between 16 and 21
+ *  4) Start with a diagonal line of "-" then repeat it as necessary (use the % operator)
+ *  
+ * [Solution: Question5C]
+ -------------------------------------------------------------------------------- */
+
+

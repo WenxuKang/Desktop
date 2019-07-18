@@ -1,0 +1,182 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title> Gaofeng Pan - Assignment 6 - Centennial College - Summer 2018 </title>
+        <script src="Gaofeng%20Pan%20-%20Assignment%206%20-%20Centennial%20College%20-%20Summer%202018_files/jquery.min.js"></script>
+		<link href="Gaofeng%20Pan%20-%20Assignment%206%20-%20Centennial%20College%20-%20Summer%202018_files/assignment6Styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="main_container3">
+            <h1 id="title"> Top 9 Best Beaches in the World</h1>
+        </div>
+    </div>
+
+    <div class="buttonPage">
+        <div class="main_container2">
+            <input id="btnStartSlideShow" class="button" type="button" value="Start Slideshow">
+            <input id="btnStopSlideShow" class="button" type="button" value="Stop Slideshow" disabled="disabled">
+        </div>
+    </div>
+
+    <div class="page1">
+        <div class="main_container1">
+            <img id="mainImage" style="border:3px solid grey" src="Gaofeng%20Pan%20-%20Assignment%206%20-%20Centennial%20College%20-%20Summer%202018_files/IMG_01.jpg">
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="main_container">
+            <div class="see_previous"><img src="Gaofeng%20Pan%20-%20Assignment%206%20-%20Centennial%20College%20-%20Summer%202018_files/arrow.png" class="arrow_previous"></div>
+            <div class="see_next"><img src="Gaofeng%20Pan%20-%20Assignment%206%20-%20Centennial%20College%20-%20Summer%202018_files/arrow.png" class="arrow_next"></div>
+            <div class="long_container" id="divId" style="width: 2440px;">
+                <img class="imgStyle" src="Gaofeng%20Pan%20-%20Assignment%206%20-%20Centennial%20College%20-%20Summer%202018_files/IMG_01.jpg" style="width: 271.111px;">
+                <img class="imgStyle" src="Gaofeng%20Pan%20-%20Assignment%206%20-%20Centennial%20College%20-%20Summer%202018_files/IMG_02.jpg" style="width: 271.111px;">
+                <img class="imgStyle" src="Gaofeng%20Pan%20-%20Assignment%206%20-%20Centennial%20College%20-%20Summer%202018_files/IMG_03.jpg" style="width: 271.111px;">
+                <img class="imgStyle" src="Gaofeng%20Pan%20-%20Assignment%206%20-%20Centennial%20College%20-%20Summer%202018_files/IMG_04.jpg" style="width: 271.111px;">
+                <img class="imgStyle" src="Gaofeng%20Pan%20-%20Assignment%206%20-%20Centennial%20College%20-%20Summer%202018_files/IMG_05.jpg" style="width: 271.111px;">
+                <img class="imgStyle" src="Gaofeng%20Pan%20-%20Assignment%206%20-%20Centennial%20College%20-%20Summer%202018_files/IMG_06.jpg" style="width: 271.111px;">
+                <img class="imgStyle" src="Gaofeng%20Pan%20-%20Assignment%206%20-%20Centennial%20College%20-%20Summer%202018_files/IMG_07.jpg" style="width: 271.111px;">
+                <img class="imgStyle" src="Gaofeng%20Pan%20-%20Assignment%206%20-%20Centennial%20College%20-%20Summer%202018_files/IMG_08.jpg" style="width: 271.111px;">
+                <img class="imgStyle" src="Gaofeng%20Pan%20-%20Assignment%206%20-%20Centennial%20College%20-%20Summer%202018_files/IMG_09.jpg" style="width: 271.111px;">
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p id="copyright">
+            © Gaofeng Pan - Software Engineering Technology
+            - Centennial College
+        </p>
+    </footer>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#divId img').on({
+                mouseover: function () {
+                    $(this).css({
+                        'cursor': 'hand',
+                    });
+                },
+                mouseout: function () {
+                    $(this).css({
+                        'cursor': 'default',
+                    });
+                },
+                click: function () {
+                    var imageURL = $(this).attr('src');
+                    $('#mainImage').fadeOut(1000, function () {
+                        $(this).attr('src', imageURL);
+                    }).fadeIn(1000);
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var window_width = $(window).width();
+            var main_width = $(".main_container").width();
+            var long_container = $(".long_container");
+            var item = $(".imgStyle");
+            var slide_number = 0;
+
+
+            long_container.css("width", main_width * 3.05);
+            item.css("width", long_container.width() / 9);
+
+            $(".see_next").click(function () {
+                if (slide_number < 6) {
+                    slide_number++
+
+                    if (slide_number == 6) {
+                        $(".see_next").animate({ opacity: 0 });
+                    } else {
+                        $(".see_next").animate({ opacity: 1 });
+                    }
+
+                    if (slide_number == 0) {
+                        $(".see_previous").animate({ opacity: 0 });
+                    } else {
+                        $(".see_previous").animate({ opacity: 1 });
+                    }
+
+                    var item_width = $(".imgStyle").width();
+                    var pixels_moved = item_width * slide_number;
+
+                    long_container.animate({
+                        marginLeft: -pixels_moved
+                    });
+                }
+            });
+
+
+
+
+            $(".see_previous").click(function () {
+                if (slide_number > 0) {
+                    slide_number--
+
+                    if (slide_number == 0) {
+                        $(".see_previous").animate({ opacity: 0 });
+                    } else {
+                        $(".see_previous").animate({ opacity: 1 });
+                    }
+
+                    if (slide_number == 6) {
+                        $(".see_next").animate({ opacity: 0 });
+                    } else {
+                        $(".see_next").animate({ opacity: 1 });
+                    }
+
+                    var item_width = $(".imgStyle").width();
+                    var pixels_moved = item_width * slide_number;
+
+                    long_container.animate({
+                        marginLeft: -pixels_moved
+                    });
+                }
+            });
+        });
+
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var imageURLs = new Array();
+            var intervalId;
+            var btnStart = $('#btnStartSlideShow');
+            var btnStop = $('#btnStopSlideShow');
+
+            $('#divId img').each(function () {
+                imageURLs.push($(this).attr('src'));
+            });
+
+            function setImage() {
+                var mainImageElement = $('#mainImage');
+                var currentImageURL = mainImageElement.attr('src');
+                var currentImageIndex = $.inArray(currentImageURL, imageURLs);
+                if (currentImageIndex == (imageURLs.length - 1)) {
+                    currentImageIndex = -1;
+                }
+
+                mainImageElement.attr('src', imageURLs[currentImageIndex + 1])
+            }
+
+            btnStart.click(function () {
+                intervalId = setInterval(setImage, 1500);
+                $(this).attr('disabled', 'disabled');
+                btnStop.removeAttr('disabled');
+            });
+
+            btnStop.click(function () {
+                clearInterval(intervalId);
+                $(this).attr('disabled', 'disabled');
+                btnStart.removeAttr('disabled');
+            }).attr('disabled', 'disabled');
+        });
+    </script>
+
+
+</body></html>

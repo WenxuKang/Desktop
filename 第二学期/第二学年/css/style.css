@@ -1,0 +1,209 @@
+body
+{
+ font-family: Arial, Helvetica, sans-serif;
+ background-color:#ffffff;
+
+}
+#container
+{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+    /*grid-column-gap: 10px;*/
+    grid-auto-rows: minmax(100px,auto);
+    grid-row-gap: 20px;
+    /*width:980px;
+    margin: 0 auto 0 auto;*/
+    grid-template-rows:auto 355px 355px 355px;
+
+}
+
+header
+{
+  grid-column: 1/7;
+  color:#000000;
+  background-color:#000000;
+  background-image: url('../img/tmdb.png');
+  background-repeat:no-repeat;
+  background-position: 80.7%;
+  height:94%;
+  background-size:19.85%;
+
+}
+
+/*
+#overlay
+{  grid-column: 5/7;
+    position: absolute;
+    background-image: url('../img/tmdb.png');
+    background-position: center;
+    background-size:cover;
+    opacity: 0.4;
+    width:40%;
+    height:180px;
+    padding: 0 0 1.5em 0;
+}*/
+.centerWrapper
+{
+    padding: 6.0em 0 0 20.0em;
+    color:#ffffff;
+  
+}
+#sec1
+{ 
+  grid-column: 1/4;
+
+}
+.subgrid
+{
+ display:grid;
+ grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+#sec11
+{
+ grid-column: 4/5;
+ width:200px;
+ height:100%;
+}
+#info
+{
+padding-top: 0.5em;
+grid-column: 5/7;
+font-size:0.9em;
+line-height: 1.2em;
+
+}
+#sec2
+{
+grid-column: 4/7;
+
+}
+#sec22
+{
+ grid-column: 2/3;
+ width:200px;
+ height:100%;
+}
+#info2
+{
+padding-top: 0.5em;
+grid-column: 3/5;
+font-size:0.9em;
+line-height: 1.2em;
+}
+
+#sec3
+{ 
+  grid-column: 1/4;
+
+}
+#sec33
+{
+ grid-column: 4/5;
+ width:200px;
+ height:100%;
+}
+#info3
+{
+padding-top: 0.5em;
+grid-column: 5/7;
+font-size:0.9em;
+line-height: 1.2em;
+
+}
+#sec4
+{
+grid-column: 4/7;
+
+}
+#sec44
+{
+ grid-column: 2/3;
+ width:200px;
+ height:100%;
+}
+#info4
+{
+padding-top: 0.5em;
+grid-column: 3/5;
+font-size:0.9em;
+line-height: 1.2em;
+}
+#sec5
+{ 
+  grid-column: 1/4;
+
+}
+#sec55
+{
+ grid-column: 4/5;
+ width:200px;
+ height:100%;
+}
+#info5
+{
+padding-top: 0.5em;
+grid-column: 5/7;
+font-size:0.9em;
+line-height: 1.2em;
+
+}
+#sec6
+{
+grid-column: 4/7;
+
+}
+#sec66
+{
+ grid-column: 2/3;
+ width:200px;
+ height:100%;
+}
+#info6
+{
+padding-top: 0.5em;
+grid-column: 3/5;
+font-size:0.9em;
+line-height: 1.2em;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+   #sec1
+    {
+      grid-column: 1/4;
+    }  
+    #sec2
+    {
+     grid-column: 4/7;
+    }
+    #sec3
+    {
+      grid-column: 1/4;
+    }
+
+  #sec4
+    {
+    grid-column: 4/7;
+
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) { 
+
+
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+
+ }

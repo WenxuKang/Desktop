@@ -1,0 +1,27 @@
+﻿body {
+	margin: auto;
+	width: 980px;
+	background: linear-gradient(to bottom,#94D6CE, white);
+	font-family: arial, Helvetica, sans-serif;
+	position: relative;
+	background-repeat: no-repeat;
+}
+h1 {
+	text-align: center;
+	color: #000000;
+	font-family: "times New Roman", Times, serif;
+}
+h3 {
+	text-align: center;
+	font-family: "times New Roman", Times, serif;
+}
+form {
+	border-radius: .2em;
+	padding-left: 20em;
+	text-align: left;
+	line-height: 2em;
+	border-style: double;
+	border-width: 0.1em;
+	background: linear-gradient(to top, orange, red);
+	color: #FFFFFF;
+}

@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Imperial BMR calculater</title>
+<meta content="Imperial BMR calculater" name="keywords">
+<meta content="Imperial BMR calculater" name="description">
+<link href="BMR_calculaterStytle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'Button/button2B.gif',/*url*/'Button/button2C.gif',/*url*/'Button/button2E.gif',/*url*/'Button/button2F.gif',/*url*/'Button/button5F.gif',/*url*/'Button/button60.gif')">
+    <h1>Imperial calculator</h1>
+
+
+	<table style="width: 100%">
+		<tr>
+			<td><h3><a href="metric_calculater.html">
+			<img id="img1" alt="Metric calculator" fp-style="fp-btn: Simple Text 3; fp-font: Arial, Helvetica, sans-serif; fp-font-size: 11; fp-transparent: 1" fp-title="Metric calculator" height="30" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'Button/button2C.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'Button/button2A.gif')" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'Button/button2B.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'Button/button2B.gif')" src="Button/button2A.gif" style="border: 0" width="150"></a></h3></td>
+			<td><h3><a href="imperial_calculator.html">
+			<img id="img2" alt="Imperial calculator" fp-style="fp-btn: Simple Text 3; fp-font: Arial, Helvetica, sans-serif; fp-font-size: 11; fp-transparent: 1" fp-title="Imperial calculator" height="30" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'Button/button2F.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'Button/button2D.gif')" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'Button/button2E.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'Button/button2E.gif')" src="Button/button2D.gif" style="border: 0" width="150"></a></h3></td>
+		</tr>
+	</table>
+
+
+<form id="form1">
+    <br />
+	<table style="width: 50%">
+		<tr>
+			<td>Gender:</td>
+			<td><select name="genderimperial" id="genderimperial">
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			</select> </td>
+		</tr>
+		<tr>
+			<td>Age:</td>
+			<td><input type="number" id="ageimperial"> Years</td>
+		</tr>
+		<tr>
+			<td>Height:</td>
+			<td><input type="number" id="heightimperial"> Inches</td>
+		</tr>
+		<tr>
+			<td>Weight:</td>
+			<td><input type="number" id="weightimperial" step="1" min="0"> Pounds</td>
+		</tr>
+	</table>
+    Level:
+    <br>&nbsp;&nbsp;&nbsp;
+    <input type="radio" value="1.2" id="levelimperial" name= "levelimperial">Little to no exercise<br>&nbsp;&nbsp;&nbsp;
+    <input type="radio" value="1.375" id="levelimperial" name= "levelimperial">Light exercise (1–3 days per week)<br>&nbsp;&nbsp;&nbsp;
+    <input type="radio" value="1.55" id="levelimperial" name= "levelimperial">Moderate exercise (3–5 days per week)<br>&nbsp;&nbsp;&nbsp;
+    <input type="radio" value="1.725" id="levelimperial" name= "levelimperial">Heavy exercise (6–7 days per week)<br>&nbsp;&nbsp;&nbsp;
+    <input type="radio" value="1.9" id="levelimperial" name= "levelimperial">Very heavy exercise (twice per day, extra heavy workouts)<br>
+	<img id="img3" alt="Calculate BMR" onclick="CalculateImperial()" fp-style="fp-btn: Simple Text 1; fp-font: Times New Roman, Times, serif; fp-font-style: Bold; fp-font-size: 12; fp-font-color-normal: #FFFFFF; fp-transparent: 1" fp-title="Calculate BMR" height="30" onmousedown="FP_swapImg(1,0,/*id*/'img3',/*url*/'Button/button60.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img3',/*url*/'Button/button5E.gif')" onmouseover="FP_swapImg(1,0,/*id*/'img3',/*url*/'Button/button5F.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img3',/*url*/'Button/button5F.gif')" src="Button/button5E.gif" style="border: 0" width="150">
+	<p id="bmr"></p>
+	<p id="calories"></p>
+
+</form>
+
+<script src="assignment.js"></script>
+</body>
+
+</html>

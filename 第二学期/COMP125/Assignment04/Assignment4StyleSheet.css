@@ -1,0 +1,44 @@
+﻿body {
+	background-size: cover;
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url('2.jpg');
+	background-repeat: no-repeat;
+}
+fieldset label {
+    width: 10em;
+    text-align: right;
+    float: left;
+    clear: left;
+    margin: 5px 10px 0 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+input, label {
+    position: relative;
+    line-height: 1.2em;
+    display: block;
+}
+fieldset input {
+    margin: 7px 5px 0 0;
+}
+
+fieldset select {
+    margin: 7px 5px 0 0;
+}
+#title {
+	font-family: "Hobo Std";
+	font-size: 1.5em;
+	color: #FFFFFF;
+}
+#requirmentWords {
+	font-family: cursive;
+	color: #FFFFFF;
+}
+fieldset {
+	background-size: 980px 550px;
+	border-radius: 8px;
+	border: thick double #FFFFFF;
+	color: #FFFFFF;
+}

@@ -1,0 +1,7 @@
+C:\COMP123\Code-Examples\Lab-Exercises_Ch09\Lab-Exercises_Ch09\Exercise-01\bin\Debug\Exercise-01.exe.config
+C:\COMP123\Code-Examples\Lab-Exercises_Ch09\Lab-Exercises_Ch09\Exercise-01\bin\Debug\Exercise-01.exe
+C:\COMP123\Code-Examples\Lab-Exercises_Ch09\Lab-Exercises_Ch09\Exercise-01\bin\Debug\Exercise-01.pdb
+C:\COMP123\Code-Examples\Lab-Exercises_Ch09\Lab-Exercises_Ch09\Exercise-01\obj\Debug\Exercise-01.csprojResolveAssemblyReference.cache
+C:\COMP123\Code-Examples\Lab-Exercises_Ch09\Lab-Exercises_Ch09\Exercise-01\obj\Debug\Exercise-01.csproj.CoreCompileInputs.cache
+C:\COMP123\Code-Examples\Lab-Exercises_Ch09\Lab-Exercises_Ch09\Exercise-01\obj\Debug\Exercise-01.exe
+C:\COMP123\Code-Examples\Lab-Exercises_Ch09\Lab-Exercises_Ch09\Exercise-01\obj\Debug\Exercise-01.pdb
